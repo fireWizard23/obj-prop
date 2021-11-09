@@ -9,6 +9,7 @@
     "build": "tsc -p .",
     "serve": "npm run build && npm publish"
   },
+  "files": ["lib/"],
   "keywords": [],
   "author": "",
   "license": "ISC",
