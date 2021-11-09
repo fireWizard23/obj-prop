@@ -21,7 +21,7 @@ export function hasNoProperties(obj : Object) : boolean{
 
 
 /**
- * Deletes the given properties to the given object.
+ * Deletes the given properties to the given object using the delete operator.
  * @param obj Object to delete the given {@link properties} from.
  * @param properties Properties to delete from the {@link obj}
  */
