@@ -10,15 +10,26 @@ interface AnyObject {
 /**
  * Checks if a given object have no property.
  * @param obj Object to check 
- * @returns Whether the {@link obj} has no properties i.e empty
+ * @returns Whether the {@link obj} has no properties i.e empty {}
  */
 export function hasNoProperties(obj : Object) : boolean{
+    for(const prop in obj) {
+        return false;
+    }
+    return true;
+}
+
+/**
+ * Checks if a given object have any property. Opposite of {@link hasNoProperties}
+ * @param obj Object to check 
+ * @returns Whether the {@link obj} has any property
+ */
+export function hasProperties(obj : Object) : boolean{
     for(const prop in obj) {
         return true;
     }
     return false;
 }
-
 
 /**
  * Deletes the given properties to the given object using the delete operator.
