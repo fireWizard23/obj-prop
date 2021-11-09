@@ -1,12 +1,13 @@
 {
   "name": "obj-prop",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "lib/index.js",
   "types": "lib",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build" : "tsc -p ."
+    "build" : "tsc -p .",
+    "serve" : "npm run build && npm publish"
   },
   "keywords": [],
   "author": "",
