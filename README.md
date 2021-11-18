@@ -3,12 +3,14 @@
 A clear and simple way to validate and manipulate properties of an object. All the methods are: 
 * `hasNoProperties`
 * `hasProperties`
+* `hasTheseProperties`
 * `deleteProperties`
 * `nullProperties` and 
 * `clearProperties`
 
-[Source Code](https://github.com/fireWizard23/obj-prop)
+## [Source Code](https://github.com/fireWizard23/obj-prop)
 
+***
 
 ## Code Examples
 ### Example of using hasNoProperties method.
@@ -33,6 +35,19 @@ deleteProperties(test, "deleteMe", "hello");
 console.log(test) // { "doNotDeleteMe: 1 }
 
 ```
+### Using hasTheseProperties 
+
+```typescript
+import {hasTheseProperties} from 'obj-prop';
+
+const object = {test: ''};
+
+console.log(hasTheseProperties(object, "test", "username")) // false
+
+
+```
+
+
 ### Using nullProperties
 ```javascript
 const { nullProperties } = require("obj-prop");
