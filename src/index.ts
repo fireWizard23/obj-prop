@@ -50,7 +50,9 @@ export function deleteProperties(obj : AnyObject, ...properties: string[]) : voi
  */
 export function nullProperties(obj : AnyObject, ...properties : string[]) : void {
     for(let i of properties) {
-        obj[i] = null;
+        if(obj[i] != null) {
+            obj[i] = null;
+        }
     }
 }
 
@@ -61,7 +63,11 @@ export function nullProperties(obj : AnyObject, ...properties : string[]) : void
  */
 export function clearProperties(obj : AnyObject, ...properties : string[]) : void {
     for(let i of properties) {
-        obj[i] = undefined;
+        if(obj[i] != null) {
+            obj[i] = undefined;
+        }
     }
 }
+
+
 
