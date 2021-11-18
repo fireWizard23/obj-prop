@@ -73,7 +73,7 @@ export function hasTheseProperties(obj: AnyObject, ...properties: string[]) : bo
 
     for(const prop of properties) {
         if(obj[prop] == null) {
-            return true;
+            return false;
         }
     }
     return true;
