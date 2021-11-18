@@ -69,5 +69,13 @@ export function clearProperties(obj : AnyObject, ...properties : string[]) : voi
     }
 }
 
+export function hasTheseProperties(obj: AnyObject, ...properties: string[]) : boolean {
 
+    for(const prop of properties) {
+        if(obj[prop] == null) {
+            return true;
+        }
+    }
+    return true;
+}
 
