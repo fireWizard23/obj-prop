@@ -69,6 +69,12 @@ export function clearProperties(obj : AnyObject, ...properties : string[]) : voi
     }
 }
 
+/**
+ * Checks if the given properties exist within the object.
+ * @param obj Object to check
+ * @param properties The properties to check.
+ * @returns True if the properties exists within the object. False otherwise
+ */
 export function hasTheseProperties(obj: AnyObject, ...properties: string[]) : boolean {
 
     for(const prop of properties) {
